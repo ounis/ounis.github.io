@@ -20,8 +20,9 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<script src="script.js"></script>
 </head>
-<body>
+<body onLoad="preload()">
 
 <form
   action="https://formspree.io/f/mdoyknow"
@@ -30,9 +31,9 @@
     <div class="form-style">
         <h1>Transporter Helper Support</h1>
         <form>
-        <input type="text" name="name" placeholder="Your Name" />
-        <input type="email" name="email" placeholder="Email Address" />
-        <textarea name="description" placeholder="Type your Message"></textarea>
+        <input type="text" name="name" id="name" placeholder="Your Name" />
+        <input type="email" name="email" id="email" placeholder="Email Address" />
+        <textarea name="description" id="description" placeholder="Type your Message"></textarea>
         <input type="submit" value="Send" />
     </form>
     </div>
